@@ -1,0 +1,254 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    background-image: url("Background-mobile.svg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;
+    background-size: cover; */
+}
+
+#background-mobile {
+    display: block;
+}
+
+#background-tablet {
+    display: none;
+}
+
+#background-desktop {
+    display: none;
+}
+
+#header {
+    display: flex;
+    padding: 32px;
+}
+
+#logo {
+
+    font-size: 30.4px;
+    font-weight: 900;
+    flex: 1 1 167px;
+    color: #FFFFFF;
+
+}
+
+#Hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.line {
+
+    background-color: white;
+    /* background-color: black; */
+    width: 26.25px;
+    height: 2.92px;
+    margin-top: 7.3px;
+
+}
+
+#desktop-navbar {
+    display: none;
+}
+
+#textbox {
+    margin: 183px auto 0 auto;
+    width: 81%;
+}
+
+#textbox-line {
+    width: 90px;
+    height: 15px;
+    background-color: #FFFFFF;
+}
+
+#Title,
+#Description,
+#Learn-more-button {
+    margin-top: 32px;
+}
+
+#Title {
+    font-family: "Libre Caslon Display";
+    font-size: 50px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+#Description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+#Learn-more-button {
+    width: 153px;
+    height: 42px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+    background: none;
+
+}
+
+h1 {
+    margin: 388px auto auto 32px;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0;
+
+}
+
+#cards {
+    width: 90%;
+    margin: 82px auto;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.date,
+.content,
+.read-more {
+    margin-top: 25px;
+}
+
+.date {
+    font-size: 13px;
+    font-weight: 500;
+    color: #B7B7B7;
+    ;
+
+}
+
+.content {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.read-more {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: right;
+    color: #D9852C;
+
+}
+
+@media screen and (min-width: 376px) {
+
+    body {
+        background-image: url("Background-tablet.svg");
+    }
+
+    #background-mobile {
+        display: none;
+    }
+
+    #background-tablet {
+        display: block;
+    }
+
+    #background-desktop {
+        display: none;
+    }
+
+    #Title {
+        font-size: 70px;
+    }
+
+    h1 {
+        margin: 441px auto auto 72px;
+
+    }
+
+    #cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .date,
+    .content {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 745px) {
+
+    body {
+        background-image: url("Background-desktop.svg");
+    }
+
+    #background-mobile {
+        display: none;
+    }
+
+    #background-tablet {
+        display: none;
+    }
+
+    #background-desktop {
+        display: block;
+    }
+
+    #Hamburger-menu {
+        display: none;
+    }
+
+    #navbar {
+        width: 50%;
+
+
+    }
+
+    #desktop-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #desktop-navbar div {
+        color: #FFFFFF;
+    }
+
+    #textbox {
+        margin: 183px auto auto 72px;
+        max-width: 748px;
+    }
+
+    #Title {
+        font-size: 70px;
+    }
+
+    #Get-Started {
+        /* border: 1px solid black; */
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 9px 27px;
+    }
+
+    h1 {
+        margin: 417px auto auto 72px;
+    }
+
+    .content {
+        font-size: 25px;
+    }
+
+
+}
