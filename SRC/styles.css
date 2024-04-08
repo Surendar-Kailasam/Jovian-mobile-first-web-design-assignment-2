@@ -112,16 +112,19 @@ h1 {
 #cards {
     width: 90%;
     margin: 82px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card-img {
     width: 100%;
 }
 
-.date,
-.content,
-.read-more {
-    margin-top: 25px;
+.card {
+    display: flex;
+    flex
+    gap: 25px;
 }
 
 .date {
@@ -172,13 +175,8 @@ h1 {
 
     }
 
-    #cards {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .card {
-        width: 30%;
+        width: calc((100%-40px)/3);
     }
 
     .date,
