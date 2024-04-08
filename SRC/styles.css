@@ -113,7 +113,7 @@ h1 {
     width: 90%;
     margin: 82px auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -122,9 +122,11 @@ h1 {
 }
 
 .card {
+    border: 1px solid grey;
+    border-radius: 5px;
     display: flex;
-    flex
     gap: 25px;
+    flex-direction: column;
 }
 
 .date {
@@ -175,8 +177,13 @@ h1 {
 
     }
 
+    #cards{
+        flex-direction: row;
+        max-width: 1400px;
+    }
+
     .card {
-        width: calc((100%-40px)/3);
+        width: calc(100%);
     }
 
     .date,
