@@ -112,17 +112,29 @@ h1 {
 #cards {
     width: 90%;
     margin: 82px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.card:hover{
+    cursor:pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2)
 }
 
 .card-img {
     width: 100%;
 }
 
-.date,
-.content,
-.read-more {
-    margin-top: 25px;
-}
 
 .date {
     font-size: 13px;
@@ -172,13 +184,13 @@ h1 {
 
     }
 
-    #cards {
-        display: flex;
-        justify-content: space-between;
+    #cards{
+        flex-direction: row;
+        max-width: 1400px;
     }
 
     .card {
-        width: 30%;
+        width: 100%;
     }
 
     .date,
