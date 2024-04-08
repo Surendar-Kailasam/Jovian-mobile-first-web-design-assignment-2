@@ -117,9 +117,6 @@ h1 {
     gap: 20px;
 }
 
-.card-img {
-    width: 100%;
-}
 
 .card {
     border: 1px solid grey;
@@ -128,6 +125,16 @@ h1 {
     gap: 25px;
     flex-direction: column;
 }
+
+.card:hover{
+    cursor:pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2)
+}
+
+.card-img {
+    width: 100%;
+}
+
 
 .date {
     font-size: 13px;
@@ -183,7 +190,7 @@ h1 {
     }
 
     .card {
-        width: calc(100%);
+        width: 100%;
     }
 
     .date,
